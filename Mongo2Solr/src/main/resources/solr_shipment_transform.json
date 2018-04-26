@@ -1,0 +1,102 @@
+[
+	{
+		"operation": "shift",
+		"spec": {
+			"value": {
+				"busId": {
+					"\\$numberLong": "customId"
+				},
+				"quote_id": "quoteId",
+				"start_date": {
+					"userDate": {
+						"\\$date": "startDate"
+					},
+					"flex": "startDateFlex"
+				},
+				"end_date": {
+					"userDate": {
+						"\\$date": "endDate"
+					},
+					"flex": "endDateFlex"
+				},
+				"shipmentId": {
+					"\\$numberLong": "contextId"
+				},
+				"createdBy": {
+					"\\$numberLong": "createdBy"
+				},
+				"active": "active",
+				"deleted": "deleted",
+				"phase": {
+					"value": "phase"
+				},
+				"lane": {
+					"start": "laneStart",
+					"end": "laneEnd",
+					"notes": "laneNotes"
+				},
+				"status": {
+					"tags": "tags"
+				},
+				"equipment": {
+					"*": {
+						"equipment_type": {
+							"value": "equipmentType"
+						},
+						"equipment_size": {
+							"value": "equipmentSize"
+						}
+					}
+				},
+				"customer_orders": {
+					"*": {
+						"customer_order_id": {
+							"\\$numberLong": "customerOrder\\.id"
+						},
+						"custom_id": "customerOrder\\.customId",
+						"customer": {
+							"name": "customerOrder\\.customerName",
+							"photo": "customerOrder\\.customerPhoto"
+						},
+						"lane": {
+							"start": "customerOrder\\.laneStart",
+							"end": "customerOrder\\.laneEnd",
+							"notes": "customerOrder\\.laneNotes"
+						},
+						"external_ids": {
+							"*": {
+								"id_value": "customerOrder\\.externalIdValue",
+								"id": {
+									"\\$numberLong": "customerOrder\\.externalId"
+								}
+							}
+						}
+					}
+				},
+				"carrier_orders": {
+					"*": {
+						"carrier_order_id": {
+							"\\$numberLong": "carrierOrder\\.id"
+						},
+						"custom_id": "carrierOrder\\.customId",
+						"carrier": {
+							"name": "carrierOrder\\.carrierName"
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"operation": "default",
+		"spec": {
+			"contextType": "SHIPMENT"
+		}
+	},
+	{
+		"operation": "modify-default-beta",
+		"spec": {
+			"id": "=concat(@(1,customId),'|SHIPMENT|',@(1,contextId))"
+		}
+	}
+]

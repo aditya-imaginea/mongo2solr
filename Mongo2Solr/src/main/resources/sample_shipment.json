@@ -1,0 +1,270 @@
+{
+  "_id": {
+    "$oid": "57699aabe4b0b169f3584293"
+  },
+  "value": {
+    "date": {
+      "$date": "2016-06-21T19:51:07.353Z"
+    },
+    "busId": {
+      "$numberLong": "3"
+    },
+    "formId": {
+      "$numberLong": "200"
+    },
+    "end_date": {
+      "date": {
+        "$date": "2016-06-29T07:00:00.000Z"
+      },
+      "timezone": "America/Los_Angeles",
+      "flex": 0,
+      "userDate": {
+        "$date": "2016-06-29T00:00:00.000Z"
+      }
+    },
+    "phase": {
+      "id": {
+        "$numberLong": "100155"
+      },
+      "value": "Quote",
+      "key": "2000"
+    },
+    "start_timezone": "America/Chicago",
+    "quote_id": "Q018498",
+    "active": true,
+    "equipment": [
+      {
+        "date": {
+          "$date": "2016-06-21T19:51:07.353Z"
+        },
+        "deleted": false,
+        "active": true,
+        "lastUpdatedOn": {
+          "$date": "2016-06-21T19:51:07.353Z"
+        },
+        "equipment_type": {
+          "id": {
+            "$numberLong": "100029"
+          },
+          "value": "Flatbed"
+        },
+        "equipment_id": {
+          "$numberLong": "5280"
+        }
+      }
+    ],
+    "busFormId": {
+      "$numberLong": "14"
+    },
+    "end_timezone": "America/Los_Angeles",
+    "deleted": false,
+    "customer_orders": [
+      {
+        "date": {
+          "$date": "2016-06-21T19:51:07.334Z"
+        },
+        "quote_id": "Q018498",
+        "customer_order_id": {
+          "$numberLong": "3356"
+        },
+        "active": true,
+        "equipment": [
+          {
+            "date": {
+              "$date": "2016-06-21T19:51:07.353Z"
+            },
+            "deleted": false,
+            "active": true,
+            "lastUpdatedOn": {
+              "$date": "2016-06-21T19:51:07.353Z"
+            },
+            "equipment_type": {
+              "id": {
+                "$numberLong": "100029"
+              },
+              "value": "Flatbed"
+            },
+            "equipment_id": {
+              "$numberLong": "5280"
+            }
+          }
+        ],
+        "preferred_start_date": {
+          "date": {
+            "$date": "2016-06-27T05:00:00.000Z"
+          },
+          "timezone": "America/Chicago",
+          "flex": 0,
+          "userDate": {
+            "$date": "2016-06-27T00:00:00.000Z"
+          }
+        },
+        "bill_terms": {
+          "days_to_pay": 30
+        },
+        "deleted": false,
+        "createdBy": {
+          "id": {
+            "$numberLong": "12"
+          }
+        },
+        "preferred_end_date": {
+          "date": {
+            "$date": "2016-06-29T07:00:00.000Z"
+          },
+          "timezone": "America/Los_Angeles",
+          "flex": 0,
+          "userDate": {
+            "$date": "2016-06-29T00:00:00.000Z"
+          }
+        },
+        "lastUpdatedOn": {
+          "$date": "2016-06-21T19:51:07.334Z"
+        },
+        "lane": {
+          "start": "Claremore, OK",
+          "end": "Lake Arrowhead, CA"
+        },
+        "customer": {
+          "owner": {
+            "id": {
+              "$numberLong": "12"
+            },
+            "photo": "",
+            "name": ""
+          },
+          "createdBy": {
+            "name": "",
+            "photo": "",
+            "id": {
+              "$numberLong": "12"
+            }
+          },
+          "comissions": [],
+          "name": "Hydrohoist Marine Group, Inc",
+          "photo": "",
+          "id": {
+            "$numberLong": "3196"
+          }
+        },
+        "costs": {
+          "line_items": [
+            {
+              "type": {
+                "id": 101308,
+                "value": "Freight - flat"
+              },
+              "qty": 1,
+              "price": 1720,
+              "amount": 1720,
+              "billable": true,
+              "id": {
+                "$numberLong": "7737"
+              },
+              "active": true,
+              "deleted": false,
+              "date": {
+                "$date": "2016-06-21T19:53:57.018Z"
+              },
+              "createdBy": {
+                "id": {
+                  "$numberLong": "12"
+                }
+              }
+            }
+          ],
+          "amount": 1720,
+          "createdBy": {
+            "id": {
+              "$numberLong": "12"
+            }
+          },
+          "type": {
+            "id": 100217,
+            "type": "Receivables"
+          },
+          "active": true,
+          "deleted": false,
+          "date": {
+            "$date": "2016-06-21T19:53:57.018Z"
+          }
+        }
+      }
+    ],
+    "createdBy": {
+      "$numberLong": "12"
+    },
+    "shipmentId": {
+      "$numberLong": "2324732"
+    },
+    "appId": {
+      "$numberLong": "49"
+    },
+    "lastUpdatedOn": {
+      "$date": "2016-06-21T19:53:57.208Z"
+    },
+    "lane": {
+      "start": "Claremore, OK",
+      "end": "Lake Arrowhead, CA"
+    },
+    "start_date": {
+      "date": {
+        "$date": "2016-06-27T05:00:00.000Z"
+      },
+      "timezone": "America/Chicago",
+      "flex": 0,
+      "userDate": {
+        "$date": "2016-06-27T00:00:00.000Z"
+      }
+    },
+    "status": {
+      "date": {
+        "$date": "2016-06-21T19:51:07.211Z"
+      },
+      "code": {
+        "id": {
+          "$numberLong": "100160"
+        },
+        "value": "Quote active",
+        "key": "2100"
+      },
+      "deleted": false,
+      "notes": "",
+      "createdBy": {
+        "id": {
+          "$numberLong": "12"
+        }
+      },
+      "channel": "WEB",
+      "active": true,
+      "description": "Quote active",
+      "lastUpdatedOn": {
+        "$date": "2016-06-21T19:51:07.211Z"
+      },
+      "attributes": {},
+      "id": {
+        "$numberLong": "3309"
+      },
+      "category": "quote"
+    },
+    "groups": [
+      {
+        "$numberLong": "1169"
+      }
+    ],
+    "updatedBy": {
+      "id": {
+        "$numberLong": "12"
+      }
+    },
+    "margin": {
+      "total_payables": 0,
+      "total_receivables": 1720,
+      "actual_margin": 100,
+      "actual_margin_val": 1720,
+      "target_margin": 15,
+      "target_margin_val": 258
+    },
+    "need_appointment": false
+  }
+}
